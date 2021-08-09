@@ -5,7 +5,7 @@ import { TextField } from '@material-ui/core';
 
 import Button from '@material-ui/core/Button';
 
-function Register() {
+const Register = () => {
   return (
     
     <div>
