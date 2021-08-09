@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 
 import { Grid } from '@material-ui/core';
 import { TextField } from '@material-ui/core';
@@ -56,16 +56,7 @@ export default function Auth() {
             >
       Login
     </Button>
-    <div>
-    <br></br>
-    <br></br>
-
-    <Link to="/register">
-    <Button variant="contained" color="secondary">
-      Sign Up
-    </Button>
-    </Link>
-    </div>
+    
    
     </Grid>
 
