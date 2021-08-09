@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { Grid } from '@material-ui/core';
 import { TextField } from '@material-ui/core';
 
 import Button from '@material-ui/core/Button';
 
-function Login() {
+function Register() {
   return (
     
     <div>
@@ -29,22 +29,21 @@ function Login() {
         <TextField spacing={5} id="standard-basic" label="Password" />
         </form>
       </div>
+      <div>
+        <form noValidate autoComplete="off">
+        <TextField spacing={5} id="standard-basic" label="Confirm Password" />
+        </form>
+      </div>
     <div>
 
-      <br></br>
-
-    <Button variant="contained" color="primary">
-      Login
-    </Button>
     
     <br></br>
     <br></br>
 
-    <Link to="/register">
-    <Button variant="contained" color="secondary">
-      Sign Up
+    <Button variant="contained" color="default">
+      Register
     </Button>
-    </Link>
+
     </div>
    
     </Grid>
@@ -55,4 +54,4 @@ function Login() {
 
 
 
-export default Login;
+export default Register;
