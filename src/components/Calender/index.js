@@ -1,24 +1,31 @@
-import React from "react";
+import React, { Component } from "react";
 
-import moment from 'moment'
+import Calendar from "react-material-ui-calendar";
 
-let weekdayshort = moment.weekdaysShort();
+//import moment from 'moment'
 
-let weekdayshortname = this.weekdayshort.map(day => {
-  return (
-    <th key={day} className="week-day">
-     {day}
-    </th>
-  );
-});
-//import { Grid, TextField, Button } from '@material-ui/core';
+import SimpleBottomNavigation from '../BaseNav';
 
-export default class Calendar extends React.Component {
-    render() {
-      return (
-        <div>
-          <h2>My Calendar</h2>
-        </div>
-      );
-    }
+export default class App extends Component {
+  render() {
+    return (
+     <div>
+      <Calendar
+        generalStyle={{
+          maxWidth: "100%",
+          margin: "0 auto",
+          backgroundColor: "rgba(256,256,256,1)",
+          height: "100%",
+          overflow: "auto"
+        }}
+        light={true}
+      />
+    
+      
+
+      <SimpleBottomNavigation/>
+
+     </div>
+    );
   }
+}
