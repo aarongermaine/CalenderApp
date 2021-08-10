@@ -3,6 +3,8 @@ import { supabase } from '../../auth/supabaseClient'
 
 import { Grid, TextField, Button } from '@material-ui/core';
 
+import SimpleBottomNavigation from '../BaseNav';
+
 export default function Account({ session }) {
   const [loading, setLoading] = useState(true)
   const [username, setUsername] = useState(null)
@@ -76,7 +78,7 @@ export default function Account({ session }) {
       direction="column"
       alignItems="center"
       justify="center"
-      style={{ minHeight: '100vh' }}>
+      style={{ minHeight: '78vh' }}>
 
       <h1>Calender App</h1>
 
@@ -124,9 +126,14 @@ export default function Account({ session }) {
           Sign Out
         </Button>
       </div>
-    
+      
+    <SimpleBottomNavigation>
+
+    </SimpleBottomNavigation>
 
     </Grid>
+
+    
     
     </div>
   )
