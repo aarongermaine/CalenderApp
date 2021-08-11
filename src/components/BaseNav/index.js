@@ -1,4 +1,10 @@
 import React from 'react';
+import { Route, Switch } from "react-router-dom";
+
+import Account from '../Account';
+import Calendar from '../Calender';
+//import LogOut from '../LogOut'
+
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -17,6 +23,7 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
+    <Switch>
     <BottomNavigation
       value={value}
       onChange={(event, newValue) => {
@@ -29,5 +36,6 @@ export default function SimpleBottomNavigation() {
       <BottomNavigationAction label="Calender" icon={<CalendarTodayIcon />} />
       <BottomNavigationAction label="Log Out" icon={<ExitToAppIcon />} />
     </BottomNavigation>
+    </Switch>
   );
 }
