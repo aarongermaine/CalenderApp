@@ -4,7 +4,6 @@ import { supabase } from '../../auth/supabaseClient'
 
 import { Grid, TextField, Button } from '@material-ui/core';
 
-import SimpleBottomNavigation from '../BaseNav';
 
 export default function Account({ session }) {
   const [loading, setLoading] = useState(true)
@@ -83,12 +82,12 @@ export default function Account({ session }) {
 
       <h1>Calender App</h1>
 
-      <div>
+      
 
         <label htmlFor="email">Email:</label>
         <br></br>
         <TextField id="email, standard-basic" type="text" value={session.user.email} disabled />
-      </div>
+      
       <br></br>
       <div>
         <label htmlFor="username">Name:</label>
@@ -128,9 +127,7 @@ export default function Account({ session }) {
         </Button>
       </div>
       
-    <SimpleBottomNavigation>
-
-    </SimpleBottomNavigation>
+    
 
     </Grid>
 

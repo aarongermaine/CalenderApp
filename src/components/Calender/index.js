@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 import Calendar from "react-material-ui-calendar";
 
-//import moment from 'moment'
 
-import SimpleBottomNavigation from '../BaseNav';
+
+
 
 export default class App extends Component {
   render() {
@@ -23,7 +23,7 @@ export default class App extends Component {
     
       
 
-      <SimpleBottomNavigation/>
+     
 
      </div>
     );
